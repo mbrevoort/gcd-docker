@@ -1,13 +1,26 @@
 # gcd
 Local instance of google datastore running in a Docker container.
 
+#### build
 ```
 docker build -t erikdejonge/gcd .
+```
+#### pull
+```
+docker pull erikdejonge/gcd .
+```
+
+#### create repository
+```
 docker run --rm -v [absolutepath]/localdatastore:/localdatastore erikdejonge/gcd /gcd-v1beta2-rev1-2.1.1/gcd.sh create -d localdatastore /localdatastore
+```
+
+#### run datastore
+```
 docker run -Pd -v [absolutepath]/localdatastore:/localdatastore erikdejonge/gcd
 ```
 
-## osx
+#### on osx
 ```
 $ boot2docker ip
 192.168.59.103
