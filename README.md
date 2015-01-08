@@ -8,15 +8,19 @@ docker run -Pd -v [absolutepath]/localdatastore:/localdatastore erikdejonge/gcd
 ```
 
 ## osx
-
+```
 $ boot2docker ip
 192.168.59.103
-
+```
+```
 $ docker ps
 PORTS: 0.0.0.0:49153->8080/tcp
-
+```
+```
 Datastore available on
 192.168.59.103:49153
-
+```
+```
 Admin on
 http://192.168.59.103:49153/_ah/admin
+```
